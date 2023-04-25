@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --purple500: #281154;
+    --purple300: #270082;
+    --purple600: #1b0058;
+    --red600: #dc0000;
+    --body: #f9f6ff;
+    --max-width: 1200px;
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: var(--purple300);
+    color: white;
+    padding: 13px;
+
+    /* for fixing (position:sticky) of header bar at top  */
+    position: sticky;
+    top: 0%;
+    z-index: 100;
+    box-shadow: 4px 4px 4px #fff;
+
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    /* height: 50px; */
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+logo {
+    font-size: 29px;
+    font-weight: 300;
+}
+
+ul a {
+    list-style: none;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 45px;
+    color: white;
+}
+
+nav ul li {
+    color: white;
+}
+
+nav ul li:hover {
+    border-bottom: 2px solid white;
+    transition: 0.2s ease-in;
+    color: #dc0000;
+}
+
+nav ul li {
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in;
+}
+
+section {
+    scroll-margin: 70px;
+}
+
+.hero-section {
+    background: url(images/hero_image.png);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    color: white;
+    align-items: center;
+}
+
+.hero-section .container {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    font-size: 17px;
+}
+
+.hero-section .container p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-section .container h1 {
+    font-size: 30px;
+}
+
+.hero-section .container h3 {
+    font-size: 20px;
+}
+
+.music-section {
+    display: flex;
+    /* padding: 5px; */
+    flex-direction: column;
+    /* margin-top: 10px; */
+    height: 100vh;
+}
+
+/* .music-section .container h2 {
+    font-weight: bold;
+} */
+
+.music-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--purple500);
+}
+
+.music-container h2,
+h4 {
+    text-align: center;
+    color: #fff;
+}
+
+
+p {
+    color: white;
+}
+
+button {
+    margin: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    width: 230px;
+    height: 42px;
+    color: #f9f6ff;
+    background-color: var(--red600);
+    text-align: center;
+    margin-left: 620px;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+}
+
+.music-section .music-container p {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.ipad-iphone {
+    padding: 10px;
+    border: 2px;
+    margin-left: 316px;
+    margin-top: 30px;
+}
+
+.ipad-iphone img {
+    margin: 2px;
+    padding: 2px;
+    border: 2px;
+    /* box-shadow: 5px 5px 5px; */
+}
+
+.about-music-section {
+    margin-top: 250px;
+    padding: 20px;
+    gap: 10px;
+    display: grid;
+}
+
+.about-music-section h3 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.about-music-section p {
+    color: black;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.mac-img {
+    padding: 5px;
+    display: flex;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+.video-section {
+    background-image: url(images/video.png);
+    min-height: 800px;
+    background-image: url(images/video.png);
+    min-height: 800px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.video-container p {
+    max-width: 1200px;
+}
+
+.hero-section,
+.video-section {
+    /* it is beign done so that when u zoom-in and zoom-out the images dont get too many */
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gift-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0px;
+    margin-left: 0px;
+    gap: 20px;
+    width: 1200px;
+    margin-left: 140px;
+    padding: 10px;
+}
+
+.redeem-button {
+    margin: 10px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-content p {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.footer-links ul li {
+    /* color: black; */
+    list-style: none;
+}
+
+.footer-links ul {
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer-links h4 {
+    margin-bottom: 5px;
+}
+
+.footer-upper {
+    background-color: var(--purple600);
+    margin: 10px 10px 0px 10px;
+    padding: 50px;
+    color: #fff;
+}
+
+.footer-lower {
+    background-color: var(--purple300);
+    /* width: 1200px; */
+    height: 40px;
+    margin: 0px 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.footer-lower p {
+    color: #fff;
+}
